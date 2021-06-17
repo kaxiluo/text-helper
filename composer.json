@@ -1,0 +1,33 @@
+{
+  "name": "kaxiluo/text-helper",
+  "description": "tool, helper",
+  "keywords": [
+    "php",
+    "text",
+    "helper"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "linyiyong",
+      "email": "linyiyongcn@163.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kaxiluo\\TextHelper\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}
