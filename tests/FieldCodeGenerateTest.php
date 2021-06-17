@@ -40,6 +40,20 @@ TXT;
 "c" => "3",
 TXT;
         $this->assertEquals($out, $res);
+
+        // 多列 - 单行多字符
+        $input = <<<TXT
+1  A
+2  B
+3  C
+TXT;
+        $res = $svc->make($input, 'const A = 1;');
+        $out = <<<TXT
+const A = 1;
+const B = 2;
+const C = 3;
+TXT;
+        $this->assertEquals($out, $res);
     }
 
     public function testUnalignedTxt()
